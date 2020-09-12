@@ -1,52 +1,27 @@
 <div class="m-15">
-    <h2>Escolha a melhor opção para você</h2>
+    <div class="clearfix header">
+        <img src="/assets/logos/logo-safra.svg" />
+        <h1 class="txt-color-gold">Financiamento</h1>
+        <mat-divider></mat-divider>
+    </div>
 
-    <mat-card (click)="chooseOption()">
+    <h2 class="txt-color-sand-3">Escolha a melhor opção para você</h2>
+
+    <mat-card *ngFor="let option of options" (click)="chooseOption(option)" [ngClass]="{'bg-color-gold': option == selectedOption}">
         <mat-card-header>
-            <mat-card-title>Em 12 vezes</mat-card-title>
+            <mat-card-title class="txt-color-blue">Em {{option.installmentAmount}} vezes</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <p>
-                Valor total do finaciamento: R$ 300.000,00
+            <p class="txt-color-sand-1">
+                Valor total do finaciamento: R$ {{option.amount}}
             </p>
-            <p>
-                12 x de R$ 30.000,00
+            <p class="txt-color-sand-1">
+                {{option.installmentAmount}} x de R$ {{option.partialAmount}}
             </p>
-            <p>
-                Juros de 5% a.a
+            <p class="txt-color-sand-1">
+                Juros de {{option.interest}}% a.a
             </p>
         </mat-card-content>
     </mat-card>
-    <mat-card>
-        <mat-card-header>
-            <mat-card-title>Em 24 vezes</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                Valor total do finaciamento: R$ 300.000,00
-            </p>
-            <p>
-                24 x de R$ 16.000,00
-            </p>
-            <p>
-                Juros de 5% a.a
-            </p>
-        </mat-card-content>
-    </mat-card>
-    <mat-card>
-        <mat-card-header>
-            <mat-card-title>Em 48 vezes</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <p>
-                Valor total do finaciamento: R$ 300.000,00
-            </p>
-            <p>
-                48 x de R$ 8.500,00
-            </p>
-            <p>
-                Juros de 5% a.a
-            </p>
-        </mat-card-content>
-    </mat-card>
+    <button mat-raised-button color="blue" (click)="next()" [disabled]="!selectedOption">Continuar</button>
 </div>

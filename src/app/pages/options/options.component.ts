@@ -8,12 +8,40 @@ import { Router } from '@angular/router';
 })
 export class OptionsComponent implements OnInit {
 
+  options = [
+    {
+      amount: '300.000,00',
+      partialAmount: '8.000,00',
+      installmentAmount: 48,
+      interest : 5
+    },
+    {
+      amount: '310.000,00',
+      partialAmount: '3.500,00',
+      installmentAmount: 120,
+      interest: 5
+    },
+    {
+      amount: '290.000,00',
+      partialAmount: '2.000,00',
+      installmentAmount: 300,
+      interest: 5
+    }
+  ];
+
+  selectedOption = null;
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  chooseOption(): void {
+  chooseOption(option): void {
+    this.selectedOption = option;
+  }
+
+  next(): void {
     this.router.navigate(['/accept']);
   }
 }
+
