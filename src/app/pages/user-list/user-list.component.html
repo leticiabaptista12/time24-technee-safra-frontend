@@ -1,21 +1,21 @@
 <div class="m-15">
-    <h1>Bem vindes</h1>
-    <h2>para começar escolha um dos usuários abaixo como exemplo</h2>
+    <h1 class="txt-color-blue txt-bd">Bem vindes</h1>
+    <h2 class="txt-color-sand-3">para começar escolha um dos usuários abaixo como exemplo</h2>
 </div>
 
 
 <mat-card *ngFor="let user of users" (click)="chooseUser(user)">
     <mat-card-header>
-        <mat-card-title>{{user.name}}</mat-card-title>
+        <mat-card-title class="txt-color-sand-5">{{user.name}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <p>
+        <p class="txt-color-sand-3">
             {{user.description}}
         </p>
     </mat-card-content>
 </mat-card>
 
 <div class="m-15">
-    <button mat-button color="primary" class="w-100">entenda o app aqui</button>
-    <button mat-button color="primary" class="w-100">grupo</button>
+    <button mat-button color="blue" class="w-100">entenda o app aqui</button>
+    <button mat-button color="blue" class="w-100">grupo</button>
 </div>

@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    background-color: #f2f5f6;
 }
 
 body {
@@ -18,4 +19,46 @@ body {
 
 .spacer {
     flex: 1 1 auto;
+}
+
+.mat-raised-button.mat-blue,
+.mat-flat-button.mat-blue {
+    background-color: #00003c;
+    color: white;
+}
+
+.mat-button.mat-blue {
+    color: #00003c;
+}
+
+.txt-color-blue {
+    color: #00003c;
+}
+
+.txt-color-gray {
+    color: #f2f5f6;
+}
+
+.txt-color-sand-1 {
+    color: #313131;
+}
+
+.txt-color-sand-3 {
+    color: #494949;
+}
+
+.txt-color-sand-5 {
+    color: #858585;
+}
+
+.txt-color-sand-7 {
+    color: #b9b9b9;
+}
+
+.txt-color-sand-9 {
+    color: #e0e0e0;
+}
+
+.txt-bd {
+    font-weight: bold !important;
 }
