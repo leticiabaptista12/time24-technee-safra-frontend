@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from './services/user.service';
 import { IUser } from './services/user.service.interfaces';
 
@@ -11,10 +12,16 @@ export class AppComponent implements OnInit {
 
   user: IUser;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
     this.userService.userEmiter.subscribe(user => this.user = user);
+  }
+
+  changeUser(): void {
+    this.userService.selectedUser = null;
+    console.log('teste')
+    this.router.navigate(['']);
   }
 
 }

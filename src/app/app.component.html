@@ -1,7 +1,13 @@
-<mat-toolbar>
-    <button mat-icon-button aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
+<mat-toolbar *ngIf="user">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
   </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="changeUser()">
+      <mat-icon>people</mat-icon>
+      <span>trocar de usuário</span>
+    </button>
+    </mat-menu>
     <span>Imobiliária X</span>
     <span class="spacer"></span>
     <span *ngIf="user">Olá, {{user.name}}</span>
