@@ -1,48 +1,21 @@
 <div class="m-15">
     <h1>Bem vindes</h1>
-    <h2>para começar esolha um dos usuários abaixo como exemplo</h2>
+    <h2>para começar escolha um dos usuários abaixo como exemplo</h2>
 </div>
 
-<mat-card [routerLink]="[ '/product' ]">
+
+<mat-card *ngFor="let user of users" (click)="chooseUser(user)">
     <mat-card-header>
-        <mat-card-title>Usuário 1</mat-card-title>
+        <mat-card-title>{{user.name}}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
         <p>
-            Usuário sem cadstro no Safra e sem cadastro no PIX
+            {{user.description}}
         </p>
     </mat-card-content>
 </mat-card>
 
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Usuário 2</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <p>
-            Usuário sem cadstro no Safra, mas possui cadastro no PIX
-        </p>
-    </mat-card-content>
-</mat-card>
-
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Usuário 3</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <p>
-            Usuário cadstrado no Safra, mas não possuí PIX
-        </p>
-    </mat-card-content>
-</mat-card>
-
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Usuário 4</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <p>
-            Usuário cadstrado no Safra e no PIX
-        </p>
-    </mat-card-content>
-</mat-card>
+<div class="m-15">
+    <button mat-button color="primary" class="w-100">Sobre</button>
+    <button mat-button color="primary" class="w-100">Grupo</button>
+</div>

@@ -3,5 +3,7 @@
     <mat-icon>menu</mat-icon>
   </button>
     <span>Imobiliária X</span>
+    <span class="spacer"></span>
+    <span *ngIf="user">Olá, {{user.name}}</span>
 </mat-toolbar>
 <router-outlet></router-outlet>
