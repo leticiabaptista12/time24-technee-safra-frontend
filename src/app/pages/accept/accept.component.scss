@@ -1,8 +1,22 @@
 .termos {
     max-height: 300px;
     overflow: auto;
+    background-color: white;
+    border: 2px solid #00003c;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 button {
     width: 100%;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: #D4AD68 !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #D4AD68;
 }
