@@ -40,13 +40,19 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ProductComponent } from './pages/product/product.component';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { FinancingComponent } from './utils/components/financing/financing.component';
+import { OptionsComponent } from './pages/options/options.component';
+import { AcceptComponent } from './pages/accept/accept.component';
+import { SuccessComponent } from './pages/success/success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     ProductComponent,
-    FinancingComponent
+    FinancingComponent,
+    OptionsComponent,
+    AcceptComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,

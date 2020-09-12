@@ -13,19 +13,38 @@ export class UserListComponent implements OnInit {
   users: IUser[] = [
     {
       name: 'Usuário 1',
-      description: 'Usuário sem cadastro no Safra e sem cadastro no Pix'
+      description: 'Usuário sem cadastro no Safra e sem cadastro no Pix',
+      clientSafra: false,
+      clientSafraPix: false,
+      clientPix: false
     },
     {
       name: 'Usuário 2',
-      description: 'Usuário sem cadastro no Safra mas possui cadastro no Pix'
+      description: 'Usuário sem cadastro no Safra mas possui cadastro no Pix',
+      clientSafra: false,
+      clientSafraPix: false,
+      clientPix: true
     },
     {
       name: 'Usuário 3',
-      description: 'Usuário cadastrado no Safra mas não possui cadastro no Pix'
+      description: 'Usuário cadastrado no Safra mas não possui cadastro no Pix',
+      clientSafra: true,
+      clientSafraPix: false,
+      clientPix: false
     },
     {
       name: 'Usuário 4',
-      description: 'Usuário cadastrado no Safra e no Pix'
+      description: 'Usuário cadastrado no Safra e cadastrado no Pix de outro banco',
+      clientSafra: true,
+      clientSafraPix: false,
+      clientPix: true
+    },
+    {
+      name: 'Usuário 5',
+      description: 'Usuário cadastrado no Safra e no Pix',
+      clientSafra: true,
+      clientSafraPix: true,
+      clientPix: true
     },
   ];
 
