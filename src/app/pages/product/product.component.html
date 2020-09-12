@@ -1,10 +1,10 @@
 <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" color="accent" maxWidth="auto" proportion="80" slides="5" [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false" orientation="ltr">
     <mat-carousel-slide #matCarouselSlide *ngFor="let image of images; let i = index" [image]="image.url" overlayColor="#00000040" [hideOverlay]="false"></mat-carousel-slide>
 </mat-carousel>
-<div>
+<div class="m-15">
     <h2>Casa com 3 quartos para venda 150m²</h2>
     <p>Avenida Paulista, São Paulo</p>
     <p>80 m² 3 Quartos 2 Banheiros 2 Vagas</p>
     <h1>R$ 350.000,00</h1>
-    <button mat-raised-button color="primary">Quero Visitar</button>
+    <button mat-raised-button color="primary" class="w-100">Quero Visitar</button>
 </div>
