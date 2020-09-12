@@ -13,8 +13,7 @@
     <div *ngIf="!user.clientSafraPix">
         <h3 *ngIf="!user.clientPix">Você também pode aproveitar a oprtunidade e já cadastrar sua chave no Pix, forma de pagamento criada pelo Banco Central para facilitar as transações bancarias, <a href="google">saiba mais aqui</a>.</h3>
         <h3 *ngIf="user.clientPix">Você também pode aproveitar a oprtunidade e fazer a portabilidade da chave no Pix, forma de pagamento criada pelo Banco Central para facilitar as transações bancarias, <a href="google">saiba mais aqui</a>.</h3>
-        <mat-checkbox *ngIf="!user.clientPix">Quero criar a chave no Pix</mat-checkbox>
-        <mat-checkbox *ngIf="user.clientPix">Quero trazer minha chave para o Pix do Safra</mat-checkbox>
+
     </div>
 
     <div>
@@ -39,5 +38,7 @@
             asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf</div>
     </div>
     <mat-checkbox>Aceito os termos de adesão</mat-checkbox>
+    <mat-checkbox *ngIf="!user.clientPix">Quero criar a chave no Pix</mat-checkbox>
+    <mat-checkbox *ngIf="user.clientPix">Quero trazer minha chave para o Pix do Safra</mat-checkbox>
     <button mat-raised-button color="primary" (click)="accept()">Aceitar</button>
 </div>

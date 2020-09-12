@@ -15,12 +15,12 @@ export class AppComponent implements OnInit {
   constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
+    this.user = this.userService.selectedUser;
     this.userService.userEmiter.subscribe(user => this.user = user);
   }
 
   changeUser(): void {
     this.userService.selectedUser = null;
-    console.log('teste')
     this.router.navigate(['']);
   }
 

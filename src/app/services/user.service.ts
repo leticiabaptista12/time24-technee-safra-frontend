@@ -12,11 +12,12 @@ export class UserService {
   constructor() { }
 
   set selectedUser(user: IUser) {
+    localStorage.setItem('selected_user', JSON.stringify(user));
     this.activeUser = user;
     this.userEmiter.emit(user);
   }
 
   get selectedUser(): IUser {
-    return this.activeUser;
+    return this.activeUser || JSON.parse(localStorage.getItem('selected_user'));
   }
 }
