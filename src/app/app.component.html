@@ -1,4 +1,4 @@
-<mat-toolbar *ngIf="user">
+<mat-toolbar *ngIf="user" class="bg-color-blue txt-color-gray">
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
     <mat-icon>more_vert</mat-icon>
   </button>
@@ -10,6 +10,6 @@
     </mat-menu>
     <span>Imobiliária X</span>
     <span class="spacer"></span>
-    <span *ngIf="user">Olá, {{user.name}}</span>
+    <span *ngIf="user" class="font-15">Olá, {{user.name}}</span>
 </mat-toolbar>
 <router-outlet></router-outlet>

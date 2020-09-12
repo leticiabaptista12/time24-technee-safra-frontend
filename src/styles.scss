@@ -35,8 +35,20 @@ body {
     color: #00003c;
 }
 
+.bg-color-blue {
+    background-color: #00003c;
+}
+
 .txt-color-gray {
     color: #f2f5f6;
+}
+
+.txt-color-gold {
+    color: #D4AD68;
+}
+
+.bg-color-gray {
+    background-color: #f2f5f6;
 }
 
 .txt-color-sand-1 {
@@ -61,4 +73,8 @@ body {
 
 .txt-bd {
     font-weight: bold !important;
+}
+
+.font-15 {
+    font-size: 15px;
 }
