@@ -10,21 +10,21 @@ export class OptionsComponent implements OnInit {
 
   options = [
     {
-      amount: '300.000,00',
-      partialAmount: '8.000,00',
+      amount: '60.000,00',
+      partialAmount: '1.500,00',
       installmentAmount: 48,
       interest : 5
     },
     {
-      amount: '310.000,00',
-      partialAmount: '3.500,00',
-      installmentAmount: 120,
+      amount: '65.000,00',
+      partialAmount: '1.200,00',
+      installmentAmount: 60,
       interest: 5
     },
     {
-      amount: '290.000,00',
-      partialAmount: '2.000,00',
-      installmentAmount: 300,
+      amount: '70.000,00',
+      partialAmount: '1.200,00',
+      installmentAmount: 72,
       interest: 5
     }
   ];
