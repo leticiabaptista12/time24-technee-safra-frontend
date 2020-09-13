@@ -9,3 +9,17 @@ mat-card {
 button {
     width: 100%;
 }
+
+mat-card-title {
+    margin-left: -15px;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: #D4AD68 !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #D4AD68;
+}

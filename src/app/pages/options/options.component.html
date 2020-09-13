@@ -1,7 +1,7 @@
 <div class="m-15">
     <div class="clearfix header">
         <img src="/assets/logos/logo-safra.svg" class="logo" />
-        <h1 class="txt-color-gold">Financiamento</h1>
+        <h1 class="txt-color-gold">Safra Financeira</h1>
         <mat-divider></mat-divider>
     </div>
 
@@ -13,7 +13,7 @@
         </mat-card-header>
         <mat-card-content>
             <p class="txt-color-sand-1">
-                Valor total do finaciamento: R$ {{option.amount}}
+                Valor do finaciamento: R$ {{option.amount}}
             </p>
             <p class="txt-color-sand-1">
                 {{option.installmentAmount}} x de R$ {{option.partialAmount}}
@@ -23,5 +23,10 @@
             </p>
         </mat-card-content>
     </mat-card>
-    <button mat-raised-button color="blue" (click)="next()" [disabled]="!selectedOption">Continuar</button>
+    <div class="mt-15">
+        <mat-checkbox class="txt-color-sand-1">
+            Quero receber mais ofertas do Safra
+        </mat-checkbox>
+    </div>
+    <button mat-raised-button color="blue" (click)="next()" [disabled]="!selectedOption" class="mt-15">Continuar</button>
 </div>
