@@ -46,6 +46,7 @@ import { SuccessComponent } from './pages/success/success.component';
 import { FormsModule } from '@angular/forms';
 import { GroupComponent } from './pages/group/group.component';
 import { AboutComponent } from './pages/about/about.component';
+import { HeaderComponent } from './utils/components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { AboutComponent } from './pages/about/about.component';
     AcceptComponent,
     SuccessComponent,
     GroupComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent
   ],
   imports: [
     FormsModule,
