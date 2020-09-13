@@ -52,10 +52,10 @@
         <mat-checkbox [(ngModel)]="accpetedTerms" class="txt-color-sand-1">Li e aceito os termos de adesão</mat-checkbox>
     </div>
     <div class="mt-15">
-        <mat-checkbox [(ngModel)]="accpetedPix" *ngIf="!user.clientPix" class="txt-color-sand-1">Quero criar a chave no PIX</mat-checkbox>
+        <mat-checkbox [(ngModel)]="acceptedPix" *ngIf="!user.clientPix" class="txt-color-sand-1">Quero criar a chave no PIX</mat-checkbox>
     </div>
     <div class="mt-15">
-        <mat-checkbox [(ngModel)]="accpetedPix" *ngIf="user.clientPix && !user.clientSafraPix" class="txt-color-sand-1">Quero trazer minha chave para o PIX Safra
+        <mat-checkbox [(ngModel)]="acceptedPix" *ngIf="user.clientPix && !user.clientSafraPix" class="txt-color-sand-1">Quero trazer minha chave para o PIX Safra
         </mat-checkbox>
     </div>
     <button mat-raised-button color="blue" (click)="accept()" class="mt-15" [disabled]="!accpetedTerms">Aceitar</button>

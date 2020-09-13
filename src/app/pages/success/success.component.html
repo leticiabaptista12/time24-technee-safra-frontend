@@ -2,6 +2,6 @@
     <app-header [title]="'Safra Financeira'"></app-header>
     <h1 class="txt-color-blue txt-bd">Parabéns</h1>
     <p class="txt-color-sand-1">O seu pedido já está sendo processado pela equipe do Safra e em breve entraremos em contato para confirmar os dados, fique tranquilo sua casa/apartamento está reservado até o final do processo.</p>
-    <p class="txt-color-sand-1">Valide seu e-email para a confirmação da chave PIX.</p>
+    <p class="txt-color-sand-1" *ngIf="acceptedPix">Valide seu e-email para a confirmação da chave PIX.</p>
     <button mat-raised-button color="blue" class="w-100" (click)="backToHome()">Voltar para o inicio</button>
 </div>

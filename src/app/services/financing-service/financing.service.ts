@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,6 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class FinancingService {
 
-  constructor(private http: HttpClient) {
+  private accpetedPixSafra = false;
+
+  constructor() {
+  }
+
+  set accpetedPix(accpetedPix: boolean) {
+    localStorage.setItem('accpeted_pix', JSON.stringify(accpetedPix));
+    this.accpetedPixSafra = accpetedPix;
+  }
+
+  get accpetedPix(): boolean {
+    return this.accpetedPixSafra || JSON.parse(localStorage.getItem('accpeted_pix'));
   }
 }
