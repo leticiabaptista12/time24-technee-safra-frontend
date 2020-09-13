@@ -1,0 +1,28 @@
+a {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.team-img {
+    width: 60px;
+    border-radius: 35px;
+    float: left;
+}
+
+.team-member {
+    padding: 10px;
+    vertical-align: middle;
+    clear: both;
+    height: 60px;
+}
+
+span {
+    float: left;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.clearfix {
+    clear: both;
+}

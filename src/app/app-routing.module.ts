@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutComponent } from './pages/about/about.component';
 import { AcceptComponent } from './pages/accept/accept.component';
+import { GroupComponent } from './pages/group/group.component';
 import { OptionsComponent } from './pages/options/options.component';
 import { ProductComponent } from './pages/product/product.component';
 import { SuccessComponent } from './pages/success/success.component';
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     path: 'success',
     component: SuccessComponent
+  },
+  {
+    path: 'group',
+    component: GroupComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 

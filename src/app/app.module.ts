@@ -44,6 +44,8 @@ import { OptionsComponent } from './pages/options/options.component';
 import { AcceptComponent } from './pages/accept/accept.component';
 import { SuccessComponent } from './pages/success/success.component';
 import { FormsModule } from '@angular/forms';
+import { GroupComponent } from './pages/group/group.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { FormsModule } from '@angular/forms';
     FinancingComponent,
     OptionsComponent,
     AcceptComponent,
-    SuccessComponent
+    SuccessComponent,
+    GroupComponent,
+    AboutComponent
   ],
   imports: [
     FormsModule,
