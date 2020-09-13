@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-success',
@@ -8,12 +9,13 @@ import { Router } from '@angular/router';
 })
 export class SuccessComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   backToHome(): void {
+    this.userService.selectedUser = null;
     this.router.navigate(['/']);
   }
 

@@ -43,6 +43,7 @@ import { FinancingComponent } from './utils/components/financing/financing.compo
 import { OptionsComponent } from './pages/options/options.component';
 import { AcceptComponent } from './pages/accept/accept.component';
 import { SuccessComponent } from './pages/success/success.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { SuccessComponent } from './pages/success/success.component';
     SuccessComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

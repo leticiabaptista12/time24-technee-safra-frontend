@@ -11,6 +11,8 @@ import { IUser } from 'src/app/services/user.service.interfaces';
 export class AcceptComponent implements OnInit {
 
   user: IUser;
+  accpetedTerms = false;
+  acceptedPix = false;
 
   constructor(private router: Router, private userService: UserService) { }
 

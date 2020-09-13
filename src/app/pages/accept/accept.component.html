@@ -43,14 +43,14 @@
             asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf</div>
     </div>
     <div class="mt-15">
-        <mat-checkbox class="txt-color-sand-1">Li e aceito os termos de adesão</mat-checkbox>
+        <mat-checkbox [(ngModel)]="accpetedTerms" class="txt-color-sand-1">Li e aceito os termos de adesão</mat-checkbox>
     </div>
     <div class="mt-15">
-        <mat-checkbox *ngIf="!user.clientPix" class="txt-color-sand-1">Quero criar a chave no Pix</mat-checkbox>
+        <mat-checkbox [(ngModel)]="accpetedPix" *ngIf="!user.clientPix" class="txt-color-sand-1">Quero criar a chave no Pix</mat-checkbox>
     </div>
     <div class="mt-15">
-        <mat-checkbox *ngIf="user.clientPix" class="txt-color-sand-1">Quero trazer minha chave para o Pix do Safra
+        <mat-checkbox [(ngModel)]="accpetedPix" *ngIf="user.clientPix && !user.clientSafraPix" class="txt-color-sand-1">Quero trazer minha chave para o Pix do Safra
         </mat-checkbox>
     </div>
-    <button mat-raised-button color="blue" (click)="accept()" class="mt-15">Aceitar</button>
+    <button mat-raised-button color="blue" (click)="accept()" class="mt-15" [disabled]="!accpetedTerms">Aceitar</button>
 </div>
