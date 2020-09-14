@@ -47,6 +47,7 @@ import { FormsModule } from '@angular/forms';
 import { GroupComponent } from './pages/group/group.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HeaderComponent } from './utils/components/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -97,6 +98,7 @@ import { HeaderComponent } from './utils/components/header/header.component';
     MatPaginatorModule,
     MatCheckboxModule,
     MatCarouselModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
